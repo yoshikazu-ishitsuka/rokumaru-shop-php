@@ -8,10 +8,10 @@
 
 <body>
 
-
   <?php
 
   try {
+    // echo var_dump($_POST['staffcode']);
 
     $staff_code = $_GET['staffcode'];
 
