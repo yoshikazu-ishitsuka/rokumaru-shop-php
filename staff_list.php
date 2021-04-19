@@ -27,7 +27,7 @@
 
     print 'スタッフ一覧<br><br>';
 
-    print '<form method="post" action="staff_edit.php">';
+    print '<form method="post" action="staff_branch.php">';
     while (true) {
       $rec = $stmt->fetch(PDO::FETCH_ASSOC);
       if ($rec == false) {
@@ -38,7 +38,8 @@
       print '<br>';
     }
 
-    echo '<input type="submit" value="修正">';
+    echo '<input type="submit" name="edit" value="修正">';
+    echo '<input type="submit" name="delete" value="削除">';
     echo '</form>';
   } catch (Exception $e) {
     echo 'ただいま障害により大変ご迷惑をお掛けしております。';
