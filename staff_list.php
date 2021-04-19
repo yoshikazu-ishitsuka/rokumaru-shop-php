@@ -38,6 +38,8 @@
       print '<br>';
     }
 
+    echo '<input type="submit" name="disp" value="参照">';
+    echo '<input type="submit" name="add" value="追加">';
     echo '<input type="submit" name="edit" value="修正">';
     echo '<input type="submit" name="delete" value="削除">';
     echo '</form>';
